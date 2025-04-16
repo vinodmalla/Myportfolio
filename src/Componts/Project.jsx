@@ -48,8 +48,8 @@ export default function Project() {
             <h3 className='text-center mb-2 text-xl font-semibold'>My Portfolio</h3>
             <p className='px-4 mb-4 text-sm text-center'>Created a personal portfolio using React and Tailwind CSS to showcase projects and skills. Implemented smooth navigation with React Router and ensured a responsive, modern design for all devices.</p>
             <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 rounded-2xl flex items-center justify-center space-x-4">
-              <a href='https://github.com/vinodmalla/Foodapp' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><FaGithub size={40} /></a>
-              <a href='https://foodappvinod.vercel.app/' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><CgMediaLive size={40} /></a>
+              <a href='https://github.com/vinodmalla/Myportfolio' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><FaGithub size={40} /></a>
+              <a href='https://myportfolio-flax-omega.vercel.app/' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><CgMediaLive size={40} /></a>
              </div>
 
         </div>
