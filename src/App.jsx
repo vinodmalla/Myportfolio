@@ -5,8 +5,14 @@ import { createBrowserRouter,Outlet } from 'react-router-dom'
 import Home from './Componts/Home'
 import Project from './Componts/Project'
 import Contact from './Componts/Contact'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    document.documentElement.setAttribute("data-theme", savedTheme);
+  }, []);
+
 
 
   return (
@@ -23,7 +29,7 @@ export default App
 export const approuter=createBrowserRouter([
   {
     path:"",
-    element:<App />,
+    element:<App  />,
     children:[
       {
         path:"/",

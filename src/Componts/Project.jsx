@@ -2,7 +2,7 @@ import React from 'react'
 import foodapp from '../foodappp.png'
 import netflix from '../Netflix.png'
 import ECommerce from '../ecommercee.png'
-import portfolio from '../portfolio.png'
+
 import { FaGithub } from "react-icons/fa";
 import { CgMediaLive } from "react-icons/cg";
 
@@ -12,6 +12,18 @@ export default function Project() {
     <div className='m-4'>
       <h1 className='text-center text-xl font-semibold '>Here is some of the work I have done using React.</h1>
     <div className='grid grid-cols-1 md:grid-cols-2 gap-30 p-4 md:p-8 '>
+        <div className='relative group w-full h-full bg-gray-800 rounded-xl shadow-lg'>
+        <img src="/image.png" alt='portfolio' className='w-48 h-48 object-scale-down mx-auto ' />
+       
+            <h3 className='text-center mb-2 text-xl font-semibold'>DivTinder</h3>
+            <p className='px-4 mb-4 text-sm text-center'>Developed a scalable matchmaking application inspired by Tinder using React, Node.js, and MongoDB, enabling real-time swipe and match functionality.
+Integrated JWT authentication, optimized APIs, and responsive UI to deliver a smooth and engaging user experience.</p>
+            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 rounded-2xl flex items-center justify-center space-x-4">
+              <a href='https://github.com/vinodmalla/Devtinder ' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><FaGithub size={40} /></a>
+              <a href='https://www.divtinder.dpdns.org/login' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><CgMediaLive size={40} /></a>
+             </div>
+
+        </div>
         <div className=' relative group w-full h-full bg-gray-800 rounded-2xl overflow-hidden  shadow-lg  '>
              <img src={foodapp} alt='foodapp' className='w-40 h-48 object-scale-down mx-auto ' />
              <h3  className='text-center text-xl p-2 font-semibold'>Food App</h3>
@@ -42,17 +54,7 @@ export default function Project() {
              </div>
 
         </div>
-        <div className='relative group w-full h-full bg-gray-800 rounded-xl shadow-lg'>
-        <img src={portfolio} alt='portfolio' className='w-48 h-48 object-scale-down mx-auto ' />
-       
-            <h3 className='text-center mb-2 text-xl font-semibold'>My Portfolio</h3>
-            <p className='px-4 mb-4 text-sm text-center'>Created a personal portfolio using React and Tailwind CSS to showcase projects and skills. Implemented smooth navigation with React Router and ensured a responsive, modern design for all devices.</p>
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 bg-opacity-60 opacity-0 group-hover:opacity-100 transition duration-300 rounded-2xl flex items-center justify-center space-x-4">
-              <a href='https://github.com/vinodmalla/Myportfolio' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><FaGithub size={40} /></a>
-              <a href='https://myportfolio-flax-omega.vercel.app/' target='_blank' className='hover:bg-stone-400 rounded-3xl' ><CgMediaLive size={40} /></a>
-             </div>
-
-        </div>
+      
     </div>
     </div>
       

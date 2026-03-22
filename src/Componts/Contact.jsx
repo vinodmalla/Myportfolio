@@ -3,6 +3,7 @@ import { useForm, ValidationError } from '@formspree/react';
 import { FaLocationDot, FaGithub, FaLinkedin } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
 import { MdAddCall } from "react-icons/md";
+import { SiLeetcode } from "react-icons/si";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("myzevljv");
@@ -25,9 +26,9 @@ export default function Contact() {
             </p>
             <div className="space-y-4 text-xs md:text-lg">
               <div className="flex items-center gap-3"><FaLocationDot size={20} /> : Hyderabad</div>
-              <div className="flex items-center gap-3"><IoMail size={20} />: mallavinod95@gmail.com</div>
-              <div className="flex items-center gap-3"><MdAddCall size={20} />:
-               6302854600</div>
+              <a href='mailto:mallavinod95@gmail.com' target='_blank' className="flex items-center gap-3"><IoMail size={20} />: mallavinod95@gmail.com</a>
+              <a herf="tel:+916302854600" className="flex items-center gap-3"><MdAddCall size={20} />:
+               6302854600</a>
             </div>
             <div className="flex gap-6 mt-6 justify-center">
               <a href="https://github.com/vinodmalla" target="_blank" rel="noopener noreferrer" className="hover:text-gray-600">
@@ -35,6 +36,9 @@ export default function Contact() {
               </a>
               <a href="https://www.linkedin.com/in/malla-vinodkumar-476898237/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">
                 <FaLinkedin size={35} />
+              </a>
+               <a href="https://leetcode.com/u/mallavinod95/" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-600">
+                <SiLeetcode size={35} />
               </a>
             </div>
           </div>

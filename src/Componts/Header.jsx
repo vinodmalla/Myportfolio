@@ -15,6 +15,7 @@ export default function Header() {
         </div>
         <div  className={`absolute z-40 md:static top-0 left-0 w-full md:w-auto text-xs md:text-xl transition-all duration-300 shadow-md md:shadow-none ${isopen ? 'block' : 'hidden'}  bg-[#1d232a] md:bg-transparent md:flex`}  >
         <ul className=' flex flex-col md:flex-row justify-between md:space-x-6 p-4    md:bg-transparent m-4 md:m-0 md:p-0 text-gray-300 text-lg font-bold' >
+            <li className="p-2 m-2 hover:bg-white hover:text-black rounded-3xl " onClick={()=>setisOpen(false)}><Link to="/">Home</Link></li>
             <li className="p-2 m-2 hover:bg-white hover:text-black rounded-3xl " onClick={()=>setisOpen(false)}><Link to="/about">About</Link></li>
             <li className="p-2 m-2 hover:bg-white hover:text-black rounded-3xl " onClick={()=>setisOpen(false)}><Link to="/projects">Projects</Link></li>
             <li className="p-2 m-2 hover:bg-white hover:text-black rounded-3xl " onClick={()=>setisOpen(false)}><Link to='/contact'>Contact Me</Link></li>
