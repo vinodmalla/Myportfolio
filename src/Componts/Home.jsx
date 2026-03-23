@@ -16,7 +16,7 @@ export default function Home() {
         A passionate MERN Stack Developer
       </h1>
       <p className='px-4 md:px-12 text-base md:text-lg font-light mt-4'>
-        I buI build scalable, high-performance web applications using MongoDB, Express.js, React.js, and Node.js 🚀<br />
+        I build scalable, high-performance web applications using MongoDB, Express.js, React.js, and Node.js 🚀<br />
        I focus on writing clean, efficient code and delivering seamless user experiences from frontend to backend 💻<br />
       Always learning, always building, and constantly pushing the limits of modern web development.
       </p>
